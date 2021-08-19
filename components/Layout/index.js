@@ -3,7 +3,8 @@ import Link from 'next/link';
 
 const navLink = [
   { path: '/', label: 'blog', id: 1 },
-  { path: '/about', label: 'about', id: 2 }
+  { path: '/about', label: 'about', id: 2 },
+  { path: '/projects', label: 'projects', id: 3 }
 ];
 
 export default function Layout({ children }) {
