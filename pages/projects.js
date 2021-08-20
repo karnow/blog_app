@@ -5,7 +5,7 @@ import { getList } from 'lib/markdownParser';
 export const getStaticProps = () => {
   const projects = getList('_projects');
   return {
-    props: { projects }
+    props: { projects: projects.sort((a,b)=>a.createdAt -b.createdAt) }
   };
 };
 
