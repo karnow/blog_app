@@ -3,10 +3,10 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { getList } from 'lib/markdownParser';
+import { getListOfArticles } from 'services/articles';
 
 export const getStaticProps = () => {
-  const articles = getList('_articles');
+  const articles = getListOfArticles();
   return {
     props: { articles }
   };
